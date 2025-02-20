@@ -30,7 +30,31 @@ quizd = [
     "question": " guesss I dont know vrrrrrrfvggggggggggggggggggggggggggggg",
     "choices": ["1", "2", "3", "4"],
     "answer": "4"
-    }
+    },
+
+    {
+    "question": "ELITE BALL KNOWLEDGE: What do you call a wingless fly?",
+    "choices": ["a flap", "a walk", "a plum", "jason"],
+    "answer": "a walk"
+    },
+
+    {
+    "question": "who does vine love",
+    "choices": ["besting", "datagen", "lulu", "jason Thes killer"],
+    "answer": "lulu"
+    },
+
+    {
+    "question": "Sakodiaz is",
+    "choices": ["diddy", "crashout", "EVIL", "kind and loving Buddy"],
+    "answer": "kind and loving Buddy"
+    },
+
+    {
+    "question": "paul",
+    "choices": ["leskowitz", "skowitz", "petscop", "newmaker"],
+    "answer": "leskowitz"
+    }   
 ]
 
 def checkanswer(selected_choice):
@@ -50,8 +74,8 @@ def updatequ():
         buttons[i].config(text=choice, command=lambda c=choice: checkanswer(c))
 
 def showfisc():
-    messagebox.showinfo("oh my god just end it all", f"you scored {score} out of {len(quizd)}")
     root.quit()
+    messagebox.showinfo("and the final results are...", f"...you scored {score} out of {len(quizd)}. even if you got them all correct, you still suck.")
     
 root = tk.Tk()
 root.title("Quiz")

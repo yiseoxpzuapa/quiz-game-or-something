@@ -23,7 +23,7 @@ class MainWindow(tk.Frame):
         os.system('about.py')
 
     def idiot1(self):
-        os.system('idiot.py')   
+        os.system('idiot.py')
 
 
 root = tk.Tk()
