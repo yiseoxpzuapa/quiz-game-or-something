@@ -13,6 +13,7 @@ class MainWindow(tk.Frame):
         tk.Button(self, text='Enter', command=self.enter).pack()
         tk.Button(self, text='skip a stage in the quiz', command=self.idiot1).pack()
         tk.Button(self, text='About', command=self.about).pack()
+        tk.Button(self, text='Tutorial', command=self.tutorial).pack()
 
         tk.Label(self, text="sylvia :-)").pack(pady=5)
 
@@ -24,6 +25,10 @@ class MainWindow(tk.Frame):
 
     def idiot1(self):
         os.system('idiot.py')
+
+        
+    def tutorial(self):
+        os.system('README.txt')
 
 
 root = tk.Tk()
